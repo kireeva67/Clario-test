@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/styles/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"></head>
+    <script src="./src/js/script.js"></script>
+<body>
+    <div class="btn__click">
+        <button class="btn" onclick="openPopup()"><a href="#popup">Click on me</a></button>
+    </div>
+    <div id="popup" class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <button class="popup__close" onclick="closePopup()"><img src="./resources/icon-popup-close.svg" alt=""></button>
+                <div class="popup__container">
+                    <div class="popup__img"><img src="./resources/icon-warning_notify-red.svg" alt=""></div>
+                    <div class="popup__text">Are you shure you want to uninstall the Shazam app</div>
+                    <div class="popup__buttons">
+                        <button class="popup__buttons-cancel" onclick="closePopup()"><span>Cancel</span></button>
+                        <button class="popup__buttons-uninstall" onclick="closePopup()">Uninstall</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
